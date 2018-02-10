@@ -1,0 +1,39 @@
+function TaiPatch(x, y) {
+  noFill();
+  stroke(238);
+  rect(x, y, 100, 100);
+  
+  // blocky T
+  var a = 10;
+  fill('red');
+  noStroke();
+  rect(x+a, y+a, 60, 20);
+  rect(x+30, y+10, 20, 70);
+   
+  
+  // overlay of lines
+  stroke(5);
+  var lines = 3;
+  while (lines < 50) {
+    line(x+lines, y, x, y+lines);
+    lines = lines + 5;
+  }
+  stroke(0, 64, 255);
+  while (lines < 100) {
+    line(x+lines, y, x, y+lines);
+    lines = lines + 3;
+  }
+  stroke(255, 127, 0);
+  lines = 0;
+  while (lines < 50) {
+    line(x+100, y+lines, x+lines, y+100);
+    lines = lines + 4;
+  }
+  stroke(0, 64, 127);
+  while (lines < 100) {
+    line(x+100, y+lines, x+lines, y+100);
+    lines = lines + 4;
+  }
+}
+
+ TaiPatch(10,100);
