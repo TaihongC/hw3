@@ -1,0 +1,15 @@
+for (var i = 5; i <= 170; i = i + 10) {
+  var startX = 170+i;
+  var startY = i;
+  var endX = 170-i;
+  var endY = i;
+  line(startX, startY, endX, endY);
+}
+
+for (var i = 5; i <= 170; i = i + 10) {
+  var startX = 170+i;
+  var startY = 340-i;
+  var endX = 170-i;
+  var endY = 340-i;
+  line(startX, startY, endX, endY);
+}
