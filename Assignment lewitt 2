@@ -1,0 +1,19 @@
+createCanvas(340,340);
+background (240);
+strokeWeight(5);
+
+
+for (var x=5; x<=160; x=x+30) {
+line(x,10,x,160);
+
+ellipse (170,x,340,x);
+}
+
+for (var y=5; y<=160; y=y+30) {
+
+  line(1,160+y,y,160);
+  line(y,340,160,160+y);
+  
+  line(160,160+y,340-y,340);
+  line(210+y,160,340,300-y);
+}
